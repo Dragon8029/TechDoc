@@ -36,7 +36,9 @@
     <section class="main-section" id="Nesting_Elements">
         <header>Nesting Elements</header>
         <p>You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat is <strong>very</strong> grumpy, we could wrap the word "very" in a &ltstrong&gt element, which means that the word is to be strongly emphasized:</p>
-        <p>&ltp&gtMy Cat is &ltstrong&gtvery&lt/strong&gt grumpy.&lt/p&gt</p>
+        <code>
+          <p>&ltp&gtMy Cat is &ltstrong&gtvery&lt/strong&gt grumpy.&lt/p&gt</p>
+        </code>
         <p>You do however need to make sure that your elements are properly nested: in the example above, we opened the p element first, then the strong element, therefore we have to close the strong element first, then the p. The following is incorrect:</p>
         <p>&ltp&gtMyCat is &ltstrong&gtvery grumpy.&lt/p&gt&lt/strong&gt</p>
     </section>
@@ -69,13 +71,25 @@
     <section class="main-section" id="Boolean_attributes">
         <header>Boolean attributes</header>
         <p>You'll sometimes see attributes written without values — this is perfectly allowed. These are called boolean attributes, and they can only have one value, which is generally the same as the attribute name. As an example, take the disabled attribute, which you can assign to form input elements if you want them to be disabled (greyed out) so the user can't enter any data in them.</p>
-        <p>&ltinput type="text" disabled="disabled"&gt</p>
+        <code>
+          <p>&ltinput type="text" disabled="disabled"&gt</p>
+        </code>
         <p>As shorthand, it is perfectly allowable to write this as follows (we've also included a non-disabled form input element for reference, to give you more of an idea what is going on):</p>
-        <p>&ltinput type="text" disabled&gt</p>
-        <p>&ltinput type="text"&gt</p>
+        
+        <code>
+          <p>&ltinput type="text" disabled&gt</p>
+          <p>&ltinput type="text"&gt</p>
+        </code>
+        
         <p>Both will give you an output as follows:</p>   
-        <input type="text" disabled>
-        <input type="text"> 
+        <code>
+          <input type="text" disabled>
+          <input type="text"> 
+        </code>
+        
+            
+        
+       
     </section>
 
   </main>
