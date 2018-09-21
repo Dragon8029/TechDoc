@@ -38,17 +38,41 @@
         <p>You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat is <strong>very</strong> grumpy, we could wrap the word "very" in a &ltstrong&gt element, which means that the word is to be strongly emphasized:</p>
         <p>&ltp&gtMy Cat is &ltstrong&gtvery&lt/strong&gt grumpy.&lt/p&gt</p>
         <p>You do however need to make sure that your elements are properly nested: in the example above, we opened the p element first, then the strong element, therefore we have to close the strong element first, then the p. The following is incorrect:</p>
-        <img src="">
-        <p></p>
+        <p>&ltp&gtMyCat is &ltstrong&gtvery grumpy.&lt/p&gt&lt/strong&gt</p>
     </section>
     <section class="main-section">
-        <header></header>
+        <header>Block versus inline elements</header>
+        <p>There are two important categories of elements in HTML which you should know about. They are block-level elements and inline elements.</p>
+        <ul>
+          <li>Block-level elements form a visible block on a page — they will appear on a new line from whatever content went before it, and any content that goes after it will also appear on a new line. Block-level elements tend to be structural elements on the page that represent, for example, paragraphs, lists, navigation menus, footers, etc. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</li>
+          <li>Inline elements are those that are contained within block-level elements and surround only small parts of the document’s content, not entire paragraphs and groupings of content. An inline element will not cause a new line to appear in the document; they would normally appear inside a paragraph of text, for example an &lta&gt element (hyperlink) or emphasis elements such as &ltem&gt or &ltstrong&gt.</li>
+        </ul>
     </section>
     <section class="main-section">
-        <header></header>
+        <header>Attributes</header>
+        <p>Elements can also have attributes, which look like this:</p>
+        <img src="https://mdn.mozillademos.org/files/9345/grumpy-cat-attribute-small.png">
+        <p>Attributes contain extra information about the element which you don't want to appear in the actual content. In this case, the class attribute allows you to give the element an identifying name that can be later used to target the element with style information and other things.</p>
+        <p>An attribute should have:</p>
+        <ol>
+          <li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes.)</li>
+          <li>The attribute name, followed by an equals sign.</li>
+          <li>An attribute value, with opening and closing quote marks wrapped around it.</li>
+        </ol>
+        <p>Another example of an element is &lta&gt — this stands for "anchor" and will make the piece of text it wraps around into a hyperlink. This can take a number of attributes, but several are as follows:</p>
+        <ul>
+          <li>href: This attribute specifies as its value the web address that you want the link to point to; where the browser navigates to when the link is clicked. For example, href="https://www.mozilla.org/".</li>
+          <li>title: The title attribute specifies extra information about the link, such as what the page is that you are linking to. For example, title="The Mozilla homepage". This will appear as a tooltip when hovered over.</li>
+          <li>target: The target attribute specifies the browsing context which will be used to display the link. For example, target="_blank" will display the link in a new tab. If you want to display the link in the current tab just omit this attribute.</li>
+        </ul>
     </section>
     <section class="main-section">
-        <header></header>
+        <header>Boolean attributes</header>
+        <p>You'll sometimes see attributes written without values — this is perfectly allowed. These are called boolean attributes, and they can only have one value, which is generally the same as the attribute name. As an example, take the disabled attribute, which you can assign to form input elements if you want them to be disabled (greyed out) so the user can't enter any data in them.</p>
+        <p>&ltinput type="text" disabled="disabled"&gt</p>
+        <p>As shorthand, it is perfectly allowable to write this as follows (we've also included a non-disabled form input element for reference, to give you more of an idea what is going on):</p>
+        <p>&ltinput type="text" disabled&gt</p>
+        <p>&ltinput type="text"&gt</p>
     </section>
 
   </main>
