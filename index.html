@@ -8,21 +8,21 @@
     <header>HTML: HyperText Markup Language</header>
   </nav>
   <main id="main-doc">
-    <section class="main-section">
+    <section class="main-section" id="Introduction">
       <header>Introduction</header>
       <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It describes and defines the content of a webpage along with the basic layout of the webpage. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/ behavior (JavaScript).</p>
       <p>"HyperText" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
       <p>HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as &lthead&gt, &lttitle&gt, &ltbody&gt, &ltheader&gt, &ltfooter&gt, &ltarticle&gt, &ltsection&gt, &ltp&gt, &ltdiv&gt, &ltspan&gt, &ltimg&gt, &ltaside&gt, &ltaudio&gt, &ltcanvas&gt, &ltdatalist&gt, &ltdetails&gt, &ltembed&gt, &ltnav&gt, &ltoutput&gt, &ltprogress&gt, &ltvideo&gt and many others.</p>
     </section>
-    <section class="main-section">
+    <section class="main-section" id="Prerequisites">
       <header>Prerequisites</header>
       <p>Before starting this module, you don't need any previous HTML knowledge, but you should have at least basic familiarity with using computers and using the web passively (i.e., just looking at it and consuming content).</p>
     </section>
-    <section class="main-section">
+    <section class="main-section" id="What_is_HTML?">
       <header>What is HTML?</header>
       <p>HTML (Hypertext Markup Language) is not a programming language; it is a markup language used to tell your browser how to structure the web pages you visit. It can be as complicated or as simple as the web developer wishes it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of the content to make it appear or act a certain way. The enclosing tags can make a bit of content into a hyperlink to link to another page on the web, italicize words, and so on. </p>
     </section>
-    <section class="main-section">
+    <section class="main-section" id="What's_an_HTML_element?">
       <header>What's an HTML element?</header>
       <img src="https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png">
       <p>The main parts of our element are:</p>
@@ -33,14 +33,14 @@
         <li>The element: The opening tag plus the closing tag plus the content equals the element.</li>
       </ol>        
     </section>
-    <section class="main-section">
+    <section class="main-section" id="Nesting_Elements">
         <header>Nesting Elements</header>
         <p>You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat is <strong>very</strong> grumpy, we could wrap the word "very" in a &ltstrong&gt element, which means that the word is to be strongly emphasized:</p>
         <p>&ltp&gtMy Cat is &ltstrong&gtvery&lt/strong&gt grumpy.&lt/p&gt</p>
         <p>You do however need to make sure that your elements are properly nested: in the example above, we opened the p element first, then the strong element, therefore we have to close the strong element first, then the p. The following is incorrect:</p>
         <p>&ltp&gtMyCat is &ltstrong&gtvery grumpy.&lt/p&gt&lt/strong&gt</p>
     </section>
-    <section class="main-section">
+    <section class="main-section" id="Block_versus_inline_elements">
         <header>Block versus inline elements</header>
         <p>There are two important categories of elements in HTML which you should know about. They are block-level elements and inline elements.</p>
         <ul>
@@ -48,7 +48,7 @@
           <li>Inline elements are those that are contained within block-level elements and surround only small parts of the document’s content, not entire paragraphs and groupings of content. An inline element will not cause a new line to appear in the document; they would normally appear inside a paragraph of text, for example an &lta&gt element (hyperlink) or emphasis elements such as &ltem&gt or &ltstrong&gt.</li>
         </ul>
     </section>
-    <section class="main-section">
+    <section class="main-section" id="Attributes">
         <header>Attributes</header>
         <p>Elements can also have attributes, which look like this:</p>
         <img src="https://mdn.mozillademos.org/files/9345/grumpy-cat-attribute-small.png">
@@ -66,13 +66,16 @@
           <li>target: The target attribute specifies the browsing context which will be used to display the link. For example, target="_blank" will display the link in a new tab. If you want to display the link in the current tab just omit this attribute.</li>
         </ul>
     </section>
-    <section class="main-section">
+    <section class="main-section" id="Boolean_attributes">
         <header>Boolean attributes</header>
         <p>You'll sometimes see attributes written without values — this is perfectly allowed. These are called boolean attributes, and they can only have one value, which is generally the same as the attribute name. As an example, take the disabled attribute, which you can assign to form input elements if you want them to be disabled (greyed out) so the user can't enter any data in them.</p>
         <p>&ltinput type="text" disabled="disabled"&gt</p>
         <p>As shorthand, it is perfectly allowable to write this as follows (we've also included a non-disabled form input element for reference, to give you more of an idea what is going on):</p>
         <p>&ltinput type="text" disabled&gt</p>
         <p>&ltinput type="text"&gt</p>
+        <p>Both will give you an output as follows:</p>   
+        <input type="text" disabled>
+        <input type="text"> 
     </section>
 
   </main>
