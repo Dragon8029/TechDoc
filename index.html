@@ -86,10 +86,24 @@
           <input type="text" disabled>
           <input type="text"> 
         </code>
+    </section>
+    <section class="main-section" id="Omitting_quotes_around_attribute_values">
+        <header>Omitting quotes around attribute values</header>
+        <p>When you look around the World Wide Web, you'll come across all kind of strange markup styles, including attribute values without quotes. This is allowable in certain circumstances, but will break your markup in others. For example, if we revisit our link example from earlier, we could write a basic version with only the href attribute, like this:</p>
+        <code>
+          &lta href=https://www.mozilla.org/&gtfavorite website&lt/a&gt
+        </code>
+        <p>However, as soon as we add the title attribute in this style, things will go wrong:</p>
+        <code>
+          &lta href=https://www.mozilla.org/ title=The Mozilla homepage&gtfavorite website&lt/a&gt
+        </code>
+        <p>At this point the browser will misinterpret your markup, thinking that the title attribute is actually three attributes — a title attribute with the value "The", and two boolean attributes, Mozilla and homepage. This is obviously not what was intended, and will cause errors or unexpected behavior in the code, as seen in the live example below. Try hovering over the link to see what the title text is!</p>
         
-            
-        
-       
+        <a href=https://www.mozilla.org/>favorite website</a>
+        <a href=https://www.mozilla.org/ title=The Mozilla homepage>favorite website</a>
+        <p>Our advice is to always include the attribute quotes — it avoids such problems, and results in more readable code too.
+
+          </p>
     </section>
 
   </main>
