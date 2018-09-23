@@ -48,6 +48,12 @@ header {
     margin-left: 310px;
     padding: 20px;
     margin-bottom: 110px;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 section article {
     margin: 15px;
