@@ -1,8 +1,7 @@
-html {
+html, body {
     font-family: arial, helvetica;
     line-height: 1.25;
     font-size: 15px;
-    font-weight: 400px
 }
 #navbar {
     position: fixed;
@@ -13,4 +12,60 @@ html {
     height: 100%;
     border-right: solid;
     border-color: darkgrey;
+}
+header {
+    color: black;
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+#navbar ul {
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    color: black;
+    border: 1px solid;
+    border-bottom-width: 0px;
+    padding: 8px;
+    padding-left: 45px;
+    list-style: none;
+    position: relative;
+    left: -50px;
+    width: 100%;
+}
+#navbar a {
+    text-decoration: none;
+    cursor: pointer;
+}
+#main-doc {
+    position: absolute;
+    margin-left: 300px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+section article {
+    margin: 15px;
+    font-size: 0.95em;
+}
+section li {
+    margin: 15px 0px 0px 20px;
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
 }
